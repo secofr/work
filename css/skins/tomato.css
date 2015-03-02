@@ -5,7 +5,10 @@ body {
 a {
   color: #FF6347; }
 
-p {
+p,
+body .main_footer,
+.s_about li,
+.main_head li {
   color: #888; }
 
 .color_element {
@@ -17,5 +20,54 @@ p {
 .color_border {
   border-color: #FF6347; }
 
+.bg_light {
+  background-color: #FAFAFA; }
+
+.bg_dark {
+  background-color: #222;
+  color: #fff; }
+  .bg_dark .s_descr::after {
+    background-color: #fff; }
+  .bg_dark a {
+    color: #fff; }
+
 .main_color_bg {
   background-color: #222; }
+
+svg path {
+  fill: #888; }
+
+.main_about p {
+  color: #FAFAFA; }
+
+.top_mnu a:hover {
+  color: #FF6347; }
+.top_mnu a {
+  letter-spacing: 4px; }
+
+.top_text p {
+  color: #FAFAFA;
+  letter-spacing: 5px; }
+.top_text h2 {
+  color: #FAFAFA;
+  letter-spacing: 16px; }
+
+.personal_header {
+  letter-spacing: 2px; }
+
+.s_descr {
+  letter-spacing: 5px; }
+  .s_descr::after {
+    background-color: #222; }
+
+section h3 {
+  letter-spacing: 3px;
+  color: #888; }
+
+.s_about p:nth-child(even) {
+  color: #FF6347; }
+
+.social_wrap a {
+  color: #fff; }
+.social_wrap p:nth-child(even) {
+  color: #FF6347; }
