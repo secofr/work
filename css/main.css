@@ -61,7 +61,7 @@ section {
       margin-top: 60px; }
 
 .main_head {
-  min-height: 620px;
+  height: 620px;
   padding-top: 20px; }
 
 .loader {
@@ -92,15 +92,15 @@ section {
   float: left; }
 
 svg {
-  height: 60px;
-  width: 60px;
-  z-index: 100;
-  position: relative; }
+  opacity: 1;
+  height: 32px;
+  width: 32px; }
 
 .main_about p {
   position: relative;
   text-align: center;
   vertical-align: middle;
+  margin: 0;
   z-index: 50; }
 
 .toggle_mnu {
@@ -309,7 +309,64 @@ svg {
     font-size: 28px;
     padding: 0 3px; }
 
-.h_opacify {
-  opacity: 0.3;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease; }
+.top_centered_bottom {
+  display: table-cell;
+  text-align: center;
+  vertical-align: bottom; }
+
+.wrapper {
+  width: 50px;
+  height: 100px;
+  margin: auto;
+  clear: both;
+  overflow: hidden;
+  z-index: 102;
+  box-sizing: border-box; }
+  .wrapper .arrow-icon {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin-right: 24px; }
+    .wrapper .arrow-icon.up {
+      -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+              transform: rotate(180deg); }
+    .wrapper .arrow-icon.left {
+      -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+              transform: rotate(90deg); }
+    .wrapper .arrow-icon .horizontal, .wrapper .arrow-icon .vertical {
+      height: 3px;
+      width: 50%;
+      background: white;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: rotate(45deg) translateY(-50%);
+          -ms-transform: rotate(45deg) translateY(-50%);
+              transform: rotate(45deg) translateY(-50%);
+      left: 0;
+      -webkit-transition: all 0.3s ease;
+              transition: all 0.3s ease; }
+      .wrapper .arrow-icon .horizontal.open, .wrapper .arrow-icon .vertical.open {
+        -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg); }
+      .wrapper .arrow-icon .horizontal.vertical, .wrapper .arrow-icon .vertical.vertical {
+        -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        margin-left: 35%; }
+        .wrapper .arrow-icon .horizontal.vertical.open, .wrapper .arrow-icon .vertical.vertical.open {
+          -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+                  transform: rotate(45deg); }
+  .wrapper .border {
+    border: 3px solid white;
+    border-radius: 50%; }
+    .wrapper .border .horizontal, .wrapper .border .vertical {
+      width: 80%;
+      left: calc(90% - 80%); }
+    .wrapper .border.arrow-icon .vertical, .wrapper .border.arrow-icon .horizontal {
+      width: 50%;
+      left: calc(57.5% - 50%); }
