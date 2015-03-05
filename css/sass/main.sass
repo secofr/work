@@ -64,7 +64,7 @@ section
 
 
 .main_head
-	min-height: 620px
+	height: 620px
 	padding-top: 20px
 	
 	
@@ -95,9 +95,10 @@ section
 .logo_container
 	float: left
 
-//svg
-	//height: 60px
-	//width: 60px
+svg
+	opacity: 1
+	height: 32px
+	width: 32px
 	//z-index: 100
 	//position: relative
 
@@ -237,7 +238,7 @@ $h: 3px
 	z-index: 10
 	.top_descr
 		display: table-row
-		.top_centered
+		.top_centered		
 			display: table-cell
 			text-align: center
 			vertical-align: middle
@@ -314,11 +315,77 @@ $h: 3px
 		font-size: 28px
 		padding: 0 3px
 		
+$baseline: 24px
+
+// Icon controllers
+$icon-size: 50px
+$icon-stroke-width: 3px
+$icon-color: white
+$icon-trans: all .3s ease
+.top_centered_bottom
+	display: table-cell
+	text-align: center
+	vertical-align: bottom
+
+.wrapper 
+	width: 50px
+	height: 100px
+	margin: auto
+	clear: both
+	overflow: hidden
+	//padding-top: 250px
+	z-index: 102
+	//margin-top: 450px
+	
+	box-sizing: border-box
+	
+		
+	.arrow-icon 
+		position: relative
+		height: $icon-size
+		width: $icon-size
+		float: left
+		margin-right: $baseline
+    
+		&.up 
+			transform: rotate(180deg)
+		&.left 
+			transform: rotate(90deg)
+
+		.horizontal, .vertical 
+			height: $icon-stroke-width
+			width: 50%
+			background: $icon-color
+			position: absolute
+			top: 50%
+			transform: rotate(45deg) translateY(-50%)
+			left: 0
+			transition: $icon-trans
+
+			&.open 
+				transform: rotate(-45deg)  
+			&.vertical
+				transform: rotate(-45deg)
+				margin-left: 35%
+				&.open
+					transform: rotate(45deg)
+	
+	// code to optically adjust icon-sizes
+	//  height: calc(#{$icon-size} - 2%);
+	//  width: calc(#{$icon-size} - 2%);
+	.border 
+		border: $icon-stroke-width solid $icon-color
+		border-radius: 50%
+			
+		.horizontal, .vertical 
+			width: 80%
+			left: calc(90% - 80%)
 
 
-
-.h_opacify
-	opacity: .3
-	+transition(all .2s ease)
-
+		&.arrow-icon 
+			.vertical, .horizontal 
+				width: 50%
+				left: calc(57.5% - 50%)
+				
+	  
 
