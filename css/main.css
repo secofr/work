@@ -61,7 +61,7 @@ section {
       margin-top: 60px; }
 
 .main_head {
-  min-height: 620px;
+  height: 620px;
   padding-top: 20px; }
 
 .loader {
@@ -91,16 +91,11 @@ section {
 .logo_container {
   float: left; }
 
-svg {
-  height: 60px;
-  width: 60px;
-  z-index: 100;
-  position: relative; }
-
 .main_about p {
   position: relative;
   text-align: center;
   vertical-align: middle;
+  margin: 0;
   z-index: 50; }
 
 .toggle_mnu {
@@ -309,7 +304,163 @@ svg {
     font-size: 28px;
     padding: 0 3px; }
 
-.h_opacify {
-  opacity: 0.3;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease; }
+.top_centered_bottom {
+  display: table-cell;
+  text-align: center;
+  vertical-align: bottom; }
+
+.wrapper,
+.wrapper-dark {
+  width: 50px;
+  height: 100px;
+  margin: auto;
+  clear: both;
+  overflow: hidden;
+  z-index: 102;
+  box-sizing: border-box; }
+  .wrapper .arrow-icon,
+  .wrapper-dark .arrow-icon {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin-right: 24px; }
+    .wrapper .arrow-icon.up,
+    .wrapper-dark .arrow-icon.up {
+      -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+              transform: rotate(180deg); }
+    .wrapper .arrow-icon.left,
+    .wrapper-dark .arrow-icon.left {
+      -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+              transform: rotate(90deg); }
+    .wrapper .arrow-icon .horizontal, .wrapper .arrow-icon .vertical,
+    .wrapper-dark .arrow-icon .horizontal,
+    .wrapper-dark .arrow-icon .vertical {
+      height: 3px;
+      width: 50%;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: rotate(45deg) translateY(-50%);
+          -ms-transform: rotate(45deg) translateY(-50%);
+              transform: rotate(45deg) translateY(-50%);
+      left: 0;
+      -webkit-transition: all 0.3s ease;
+              transition: all 0.3s ease; }
+      .wrapper .arrow-icon .horizontal.open, .wrapper .arrow-icon .vertical.open,
+      .wrapper-dark .arrow-icon .horizontal.open,
+      .wrapper-dark .arrow-icon .vertical.open {
+        -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg); }
+      .wrapper .arrow-icon .horizontal.vertical, .wrapper .arrow-icon .vertical.vertical,
+      .wrapper-dark .arrow-icon .horizontal.vertical,
+      .wrapper-dark .arrow-icon .vertical.vertical {
+        -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        margin-left: 35%; }
+        .wrapper .arrow-icon .horizontal.vertical.open, .wrapper .arrow-icon .vertical.vertical.open,
+        .wrapper-dark .arrow-icon .horizontal.vertical.open,
+        .wrapper-dark .arrow-icon .vertical.vertical.open {
+          -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+                  transform: rotate(45deg); }
+  .wrapper .border,
+  .wrapper-dark .border {
+    border-radius: 50%; }
+    .wrapper .border .horizontal, .wrapper .border .vertical,
+    .wrapper-dark .border .horizontal,
+    .wrapper-dark .border .vertical {
+      width: 80%;
+      left: calc(90% - 80%); }
+    .wrapper .border.arrow-icon .vertical, .wrapper .border.arrow-icon .horizontal,
+    .wrapper-dark .border.arrow-icon .vertical,
+    .wrapper-dark .border.arrow-icon .horizontal {
+      width: 50%;
+      left: calc(57.5% - 50%); }
+
+.video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center; }
+
+.icon-border {
+  position: absolute; }
+
+.landing-page .book-details {
+  color: #6bc361; }
+  .landing-page .book-details svg {
+    fill: #6bc361; }
+  .landing-page .book-details svg path {
+    fill: #6bc361; }
+  .landing-page .book-details .statistics-item {
+    text-align: center;
+    width: 33.3%;
+    float: left;
+    height: 13em;
+    position: relative;
+    border-right: solid 1px rgba(107, 107, 107, 0.1); }
+    .landing-page .book-details .statistics-item svg {
+      margin-top: 0.6875em;
+      width: 5.625em;
+      height: 5.625em; }
+    .landing-page .book-details .statistics-item h1 {
+      font-size: 4.9em; }
+    .landing-page .book-details .statistics-item .statistics-inner-item {
+      margin-left: -0.5em; }
+  .landing-page .book-details .icon-wrap,
+  .landing-page .book-details .js-icon-wrap {
+    float: left;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+            transform: translate3d(0px, 0px, 0px);
+    opacity: 1; }
+    .landing-page .book-details .icon-wrap svg,
+    .landing-page .book-details .js-icon-wrap svg {
+      -webkit-transform-origin: 50% 50% 0px;
+          -ms-transform-origin: 50% 50% 0px;
+              transform-origin: 50% 50% 0px;
+      stroke-dasharray: 280px;
+      -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+          -ms-transform: matrix(1, 0, 0, 1, 0, 0);
+              transform: matrix(1, 0, 0, 1, 0, 0);
+      stroke-dashoffset: 0px; }
+  .landing-page .book-details .icon-border {
+    stroke: #6bc361; }
+  .landing-page .book-details .icon-border {
+    stroke-width: 2;
+    overflow: visible; }
+  .landing-page .book-details .js-statistics-btn-icon {
+    -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+        -ms-transform: matrix(1, 0, 0, 1, 0, 0);
+            transform: matrix(1, 0, 0, 1, 0, 0); }
+  .landing-page .book-details .statistics-copy {
+    float: left;
+    margin-left: 1em; }
+  .landing-page .book-details h1 {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+            transform: translate3d(0px, 0px, 0px);
+    opacity: 1; }
+    .landing-page .book-details h1 .tally,
+    .landing-page .book-details h1 .js-tally {
+      margin: 0;
+      position: relative;
+      text-align: center; }
+  .landing-page .book-details p {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+            transform: translate3d(0px, 0px, 0px);
+    opacity: 1;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 4px;
+    padding: 0;
+    margin: 0;
+    color: #6bc361; }
+
+.wide-spacing {
+  letter-spacing: 0.0625em; }
+
+.uppercase {
+  text-transform: uppercase; }
