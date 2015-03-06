@@ -95,10 +95,10 @@ section
 .logo_container
 	float: left
 
-svg
-	opacity: 1
-	height: 32px
-	width: 32px
+//svg
+//opacity: 1
+//	height: 32px
+//	width: 32px
 	//z-index: 100
 	//position: relative
 
@@ -320,14 +320,15 @@ $baseline: 24px
 // Icon controllers
 $icon-size: 50px
 $icon-stroke-width: 3px
-$icon-color: white
+
 $icon-trans: all .3s ease
 .top_centered_bottom
 	display: table-cell
 	text-align: center
 	vertical-align: bottom
 
-.wrapper 
+.wrapper,
+.wrapper-dark
 	width: 50px
 	height: 100px
 	margin: auto
@@ -355,7 +356,6 @@ $icon-trans: all .3s ease
 		.horizontal, .vertical 
 			height: $icon-stroke-width
 			width: 50%
-			background: $icon-color
 			position: absolute
 			top: 50%
 			transform: rotate(45deg) translateY(-50%)
@@ -374,7 +374,6 @@ $icon-trans: all .3s ease
 	//  height: calc(#{$icon-size} - 2%);
 	//  width: calc(#{$icon-size} - 2%);
 	.border 
-		border: $icon-stroke-width solid $icon-color
 		border-radius: 50%
 			
 		.horizontal, .vertical 
@@ -388,4 +387,87 @@ $icon-trans: all .3s ease
 				left: calc(57.5% - 50%)
 				
 	  
+
+.video
+	position: relative
+	width: 100%
+	height: 100%
+	text-align: center
+
+.icon-border 
+	position: absolute
+
+.landing-page
+	.book-details 
+		color: #6bc361
+		svg
+			fill: #6bc361
+		svg
+			path
+				fill: #6bc361
+
+
+		.statistics-item 
+			text-align: center
+			width: 33.3%
+			float: left
+			height: 13em
+			position: relative
+			border-right: solid 1px rgba(107,107,107,.1)
+			svg
+				margin-top: .6875em
+				width: 5.625em
+				height: 5.625em
+			h1
+				font-size: 4.9em
+	
+			.statistics-inner-item
+				margin-left: -.5em
+	
+		.icon-wrap,
+		.js-icon-wrap
+			float: left
+			transform: translate3d(0px ,0px, 0px)
+			opacity: 1
+			svg
+				transform-origin: 50% 50% 0px
+				stroke-dasharray: 280px
+				transform: matrix(1, 0, 0, 1, 0, 0)
+				stroke-dashoffset: 0px
+		.icon-border
+			stroke: #6bc361
+		.icon-border
+			stroke-width: 2
+			overflow: visible
+
+		.js-statistics-btn-icon
+			transform: matrix(1, 0, 0, 1, 0, 0)
+			
+		.statistics-copy 
+			float: left
+			margin-left: 1em
+		
+		h1
+			transform: translate3d(0px, 0px, 0px)
+			opacity: 1
+			.tally,
+			.js-tally
+				margin: 0
+				position: relative
+				text-align: center
+		p
+			transform: translate3d(0px, 0px, 0px)
+			opacity: 1
+			font-size: 1em
+			text-align: center
+			margin-top: 4px
+			padding: 0
+			margin: 0
+			color:  #6bc361
+
+.wide-spacing 
+	letter-spacing: .0625em
+
+.uppercase 
+	text-transform: uppercase
 
