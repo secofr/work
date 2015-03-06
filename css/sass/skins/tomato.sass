@@ -5,6 +5,7 @@ $text_color: #888
 $main_color: #222
 $bg_light: #FAFAFA
 $icon_color: #fff
+$icon-stroke-width: 3px
 
 @mixin kerning($kerning)
 	letter-spacing: $kerning + px
@@ -43,9 +44,9 @@ body .main_footer,
 	background-color: $main_color
 
 
-svg
-	path
-		fill: $text_color
+//svg
+//	path
+//		fill: $icon_color
 
 .main_about
 	p
@@ -88,3 +89,29 @@ section
 	p
 		&:nth-child(even)
 			color: $color
+
+// Icon controllers
+.wrapper
+	.arrow-icon 
+		.horizontal, .vertical 
+			background: $icon_color
+	
+	// code to optically adjust icon-sizes
+	//  height: calc(#{$icon-size} - 2%);
+	//  width: calc(#{$icon-size} - 2%);
+	.border 
+		border: $icon-stroke-width solid $icon_color
+		border-radius: 50%
+			
+.wrapper-dark
+	.arrow-icon 
+		.horizontal, .vertical 
+			background: $main_color
+	
+	// code to optically adjust icon-sizes
+	//  height: calc(#{$icon-size} - 2%);
+	//  width: calc(#{$icon-size} - 2%);
+	.border
+		border: $icon-stroke-width solid $main_color
+		border-radius: 50%
+
