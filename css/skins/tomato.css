@@ -34,9 +34,6 @@ body .main_footer,
 .main_color_bg {
   background-color: #222; }
 
-svg path {
-  fill: #888; }
-
 .main_about p {
   color: #FAFAFA; }
 
@@ -71,3 +68,15 @@ section h3 {
   color: #fff; }
 .social_wrap p:nth-child(even) {
   color: #FF6347; }
+
+.wrapper .arrow-icon .horizontal, .wrapper .arrow-icon .vertical {
+  background: #fff; }
+.wrapper .border {
+  border: 3px solid #fff;
+  border-radius: 50%; }
+
+.wrapper-dark .arrow-icon .horizontal, .wrapper-dark .arrow-icon .vertical {
+  background: #222; }
+.wrapper-dark .border {
+  border: 3px solid #222;
+  border-radius: 50%; }
