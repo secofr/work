@@ -304,11 +304,12 @@ $h: 3px
 .social_wrap
 	width: 260px
 	height: 60px
-	position: fixed
+	position: relative
 	z-index: 100
 	border: none
-	left: 20px
-	top: 10px
+	vertical-align: center
+	//left: 20px
+	//top: 10px
 	
 	li
 		display: inline-block
@@ -394,77 +395,82 @@ $icon-trans: all .3s ease
 	height: 100%
 	text-align: center
 
-.icon-border 
-	position: absolute
 
 .landing-page
-	.book-details 
-		color: #6bc361
+	display: block
+	color: #6bc361
+	svg
+		fill: #6bc361
+	//svg
+	//	path
+	//		fill: #fff
+	.statistics-item 
+		text-align: center
+		//width: 33.3%
+		//float: left
+		height: 13em
+		position: relative
+		//border-right: solid 1px rgba(107,107,107,.9)
 		svg
-			fill: #6bc361
-		svg
-			path
-				fill: #6bc361
-
-
-		.statistics-item 
-			text-align: center
-			width: 33.3%
-			float: left
-			height: 13em
-			position: relative
-			border-right: solid 1px rgba(107,107,107,.1)
-			svg
-				margin-top: .6875em
-				width: 5.625em
-				height: 5.625em
-			h1
-				font-size: 4.9em
-	
-			.statistics-inner-item
-				margin-left: -.5em
-	
-		.icon-wrap,
-		.js-icon-wrap
-			float: left
-			transform: translate3d(0px ,0px, 0px)
-			opacity: 1
-			svg
-				transform-origin: 50% 50% 0px
-				stroke-dasharray: 280px
-				transform: matrix(1, 0, 0, 1, 0, 0)
-				stroke-dashoffset: 0px
-		.icon-border
-			stroke: #6bc361
-		.icon-border
-			stroke-width: 2
-			overflow: visible
-
-		.js-statistics-btn-icon
-			transform: matrix(1, 0, 0, 1, 0, 0)
-			
-		.statistics-copy 
-			float: left
-			margin-left: 1em
-		
+			margin-top: .6875em
+			width: 5.625em
+			height: 5.625em
 		h1
-			transform: translate3d(0px, 0px, 0px)
-			opacity: 1
-			.tally,
-			.js-tally
-				margin: 0
-				position: relative
-				text-align: center
-		p
-			transform: translate3d(0px, 0px, 0px)
-			opacity: 1
-			font-size: 1em
-			text-align: center
-			margin-top: 4px
-			padding: 0
-			margin: 0
-			color:  #6bc361
+			font-size: 4.9em
 
+		.statistics-inner-item
+			margin-left: -.5em
+			display: inline-block
+			vertical-align: middle
+			cursor: pointer
+
+			.icon-wrap
+				float: left
+				transform: translate3d(0px ,0px, 0px)
+				opacity: 1
+				transform-origin: 50% 50% 0px
+					
+				.icon-border 
+					fill: none
+					//transform-origin: 50% 50% 0px
+					stroke: #6bc361
+					position: absolute
+					stroke-width: 2
+					overflow: visible
+					//stroke-dasharray: 280px
+					//transform: matrix(1, 0, 0, 1, 0, 0)
+					//stroke-dashoffset: 0px
+					svg
+						transform-origin: 50% 50% 0px
+						stroke-dasharray: 280px
+						transform: matrix(1, 0, 0, 1, 0, 0)
+						stroke-dashoffset: 0px
+						path
+							transform-origin: 0% 0% 0px
+
+				.statistics-btn-icon
+					transform: matrix(1, 0, 0, 1, 0, 0)
+			
+			.statistics-copy 
+				float: left
+				margin-left: 1em
+			
+				//transform: translate3d(0px, 0px, 0px)
+				//	opacity: 1
+				h1
+					margin: 0
+					padding: 0
+					position: relative
+					text-align: center
+				p
+					transform: translate3d(0px, 0px, 0px)
+					opacity: 1
+					font-size: 1em
+					text-align: center
+					margin-top: 4px
+					padding: 0
+					margin: 0
+					color:  #6bc361
 .wide-spacing 
 	letter-spacing: .0625em
 
