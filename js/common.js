@@ -1,9 +1,44 @@
-$(document).ready(function() {
 
-	//$(".icon").mouseenter(function () {
-	//			$(".icon").animated("bounce");
-	//});
+$(document).ready(function() {
+	
+
+	$("#portfolio_grid").mixItUp();
+
+	$(".s_portfolio li").click(function() {
+		$(".s_portfolio li").removeClass("active");
+		$(this).addClass("active");
+	});
+
+$(".portfolio_item").each(function(i) {
+		$(this).find("a").attr("href", "#work_" + i);
+		$(this).find(".podrt_descr").attr("id", "work_" + i);
+	});
+
+	$(".popup").magnificPopup({type:"image"});
+	$(".popup_content").magnificPopup({
+		type:"inline",
+		midClick: true
+	});
+
+
+	$("div.down-btn.animated").hover(
+	function() {
+		$(this).addClass("bounce"); // Добавляем класс bounce
+	},
+     function() {
+		$(this).removeClass("bounce"); // Убираем класс
+	});
+
+	$("div.icon-wrap.animated").hover(
+	function() {
+		$(this).addClass("flip"); // Добавляем класс bounce
+	},
+     function() {
+		$(this).removeClass("flip"); // Убираем класс
+	});
+
 	$(".wrapper a").mPageScroll2id();
+	$(".wrapper-dark a").mPageScroll2id();
 	$(".top_mnu ul a").mPageScroll2id();
 
 			//$(this).find(".vertical").toggleClass("open");
@@ -13,7 +48,7 @@ $(document).ready(function() {
 
 	$(".section_header").animated("fadeInUp", "fadeOutDown");
 
-	$(".popup").magnificPopup({type:"image"});
+	//$(".popup").magnificPopup({type:"image"});
 
 	
 	$(".animation_2").animated("fadeInLeft", "fadeOutLeft");
