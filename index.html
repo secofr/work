@@ -54,10 +54,10 @@
 					</button>
 					<nav class="top_mnu">
 						<ul>
-							<li><a href="#about">Обо мне</a></li>
-							<li><a href="#reader">Лучшие</a></li>
-							<li><a href="#">Портфолио</a></li>
-							<li><a href="#">Контакты</a></li>
+							<li><a href="#about">О проете</a></li>
+							<li><a href="#readers">Лучшие чтецы</a></li>
+							<li><a href="#writers">Писатели</a></li>
+							<li><a href="#places">Места</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -90,8 +90,43 @@
 
 
 	<section id="about" class="bg_light">
-	<div class="section_content">
-		<div class="container">
+
+		<div class="section_header section-description-dark">
+    		<div class="section-title">
+        	<div class="section-icon icon-outer">
+            <svg class="icon-inner" viewBox="0 0 90 90">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-icon-landing_book">
+            		</use>
+          	</svg>
+        	</div>
+        	<h2 class="title">156 Участников проекта</h2>
+    		</div>
+    		<p class="section-summary uppercase">Проект, созданный Ларисой Лапиной и Андреем Отиновым, с каждым днем становится популярнее! За фотографии огромное спасибо Анне Ивановой</p>
+		</div>
+
+		<div class="section_content">
+			<div class="container">
+				<div class="row s_about">
+					<div class="col-md-4 animation_1">
+						<h3>Лариса Лапина</h3>
+						<div class="person">
+						<a href="img/photo01.jpg" class="popup"><img src="img/photo01.jpg" alt="Alt" /></a>
+					</div>
+				</div>
+				
+				<div class="col-md-4">
+					<h3>Немного о себе</h3>
+					<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+					<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
+				</div>
+				
+				<div class="col-md-4 animation_1">
+					<h3>Андрей Отинов</h3>
+					<div class="person">
+						<a href="img/photo02.jpg" class="popup"><img src="img/photo02.jpg" alt="Alt" /></a>
+					</div>
+				</div>
+			</div>
 			<div class="row">
 				<div class="col-md-4 col-md-push-4 animation_1 landing-page">
 					<div class="statistics-item">
@@ -150,7 +185,7 @@
 			</div>
 			<div class="row">
 				<div class="col-md-12 center-block">
-					<div class="wrapper-dark"><a href="#reader">
+					<div class="wrapper-dark"><a href="#readers">
 						<div class="down-btn animated">
 							<div class="down-btn-inner icon-arrow icon-outer">
 							</div>
@@ -166,7 +201,7 @@
 	</div>
 	</section>
 
-<section id="reader" class="s_portfolio bg_dark">
+<section id="readers" class="s_portfolio bg_dark">
 
 	<div class="section_header section-description">
     		<div class="section-title">
@@ -176,26 +211,20 @@
             		</use>
           	</svg>
         	</div>
-        <h2 class="title">23 Участника проекта</h2>
-    </div>
-    <p class="section-summary">Журналисты, актеры, ведущие, блоггеры, музыканты и просто ценители литературы собрались вместе, чтобы стать Лучшими</p>
-</div>
-
-
-
-	
-
-
-
+        	<h2 class="title">23 Участника проекта</h2>
+    		</div>
+   			 <p class="section-summary uppercase">Журналисты, актеры, ведущие, блоггеры, музыканты и просто ценители литературы собрались вместе, чтобы стать Лучшими</p>
+	</div>
 	<div class="section_content">
 		<div class="container">
 			<div class="row">
 				<div class="filter_div controls">
 					<ul>
-						<li class="filter active" data-filter="all">Все работы</li>
-						<li class="filter" data-filter=".category-1">Сайты</li>
-						<li class="filter" data-filter=".category-2">Айдентика</li>
-						<li class="filter" data-filter=".category-3">Логотипы</li>
+						<li class="filter active" data-filter="all">Все авторы</li>
+						<li class="filter" data-filter=".category-1">Маркес</li>
+						<li class="filter" data-filter=".category-2">Булгаков</li>
+						<li class="filter" data-filter=".category-3">Чуковский</li>
+						<li class="filter" data-filter=".category-4">Хармс</li>
 					</ul>
 				</div>
 				<div id="portfolio_grid">
@@ -217,215 +246,466 @@
 							</div>
 						</div>
 					</div>
-					<div class="mix col-md-3 col-sm-6 col-xs-12 portfolio_item category-1">
-						<img src="img/portfolio-images/4.jpg" alt="Alt" />
+					<div class="mix col-md-3 col-sm-6 col-xs-12 portfolio_item category-4">
+						<img src="img/portfolio-images/reader02.jpg" alt="Alt" />
 						<div class="port_item_cont">
-							<h3>Заголовок работы</h3>
-							<p>Описание работы</p>
+							<h3>Марк Бормосов</h3>
+							<p>Блоггер</p>
 							<a href="#" class="popup_content">Посмотреть</a>
 						</div>
 						<div class="hidden">
 							<div class="podrt_descr">
 								<div class="modal-box-content">
 									<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
-									<h3>Заголовок работы</h3>
+									<h3>Марк Бормосов</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
-									<img src="img/portfolio-images/4.jpg" alt="Alt" />
+									<img src="img/portfolio-images/reader02.jpg" alt="Alt" />
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="mix col-md-3 col-sm-6 col-xs-12 portfolio_item category-1">
-						<img src="img/portfolio-images/2.jpg" alt="Alt" />
+						<img src="img/portfolio-images/reader03.jpg" alt="Alt" />
 						<div class="port_item_cont">
-							<h3>Заголовок работы</h3>
-							<p>Описание работы</p>
+							<h3>Татьяна Кормщикова</h3>
+							<p>Актриса</p>
 							<a href="#" class="popup_content">Посмотреть</a>
 						</div>
 						<div class="hidden">
 							<div class="podrt_descr">
 								<div class="modal-box-content">
 									<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
-									<h3>Заголовок работы</h3>
+									<h3>Татьяна Кормщикова</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
-									<img src="img/portfolio-images/2.jpg" alt="Alt" />
+									<img src="img/portfolio-images/reader03.jpg" alt="Alt" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mix col-md-3 col-sm-6 col-xs-12 portfolio_item category-2 category-1">
+						<img src="img/portfolio-images/reader04.jpg" alt="Alt" />
+						<div class="port_item_cont">
+							<h3>Алиса Стародубцева</h3>
+							<p>Студентка</p>
+							<a href="#" class="popup_content">Посмотреть</a>
+						</div>
+						<div class="hidden">
+							<div class="podrt_descr">
+								<div class="modal-box-content">
+									<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
+									<h3>Алиса Стародубцева</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+									<img src="img/portfolio-images/reader04.jpg" alt="Alt" />
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="mix col-md-3 col-sm-6 col-xs-12 portfolio_item category-2">
-						<img src="img/portfolio-images/3.jpg" alt="Alt" />
+						<img src="img/portfolio-images/reader05.jpg" alt="Alt" />
 						<div class="port_item_cont">
-							<h3>Заголовок работы</h3>
-							<p>Описание работы</p>
+							<h3>Ольга Цыганкова</h3>
+							<p>Журналист</p>
 							<a href="#" class="popup_content">Посмотреть</a>
 						</div>
 						<div class="hidden">
 							<div class="podrt_descr">
 								<div class="modal-box-content">
 									<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
-									<h3>Заголовок работы</h3>
+									<h3>Ольга Цыганкова</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
-									<img src="img/portfolio-images/3.jpg" alt="Alt" />
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="mix col-md-3 col-sm-6 col-xs-12 portfolio_item category-2">
-						<img src="img/portfolio-images/4.jpg" alt="Alt" />
-						<div class="port_item_cont">
-							<h3>Заголовок работы</h3>
-							<p>Описание работы</p>
-							<a href="#" class="popup_content">Посмотреть</a>
-						</div>
-						<div class="hidden">
-							<div class="podrt_descr">
-								<div class="modal-box-content">
-									<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
-									<h3>Заголовок работы</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
-									<img src="img/portfolio-images/4.jpg" alt="Alt" />
+									<img src="img/portfolio-images/reader05.jpg" alt="Alt" />
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="mix col-md-3 col-sm-6 col-xs-12 portfolio_item category-3">
-						<img src="img/portfolio-images/5.jpg" alt="Alt" />
+						<img src="img/portfolio-images/reader06.jpg" alt="Alt" />
 						<div class="port_item_cont">
-							<h3>Заголовок работы</h3>
-							<p>Описание работы</p>
+							<h3>Георгий Демин</h3>
+							<p>Журналист</p>
 							<a href="#" class="popup_content">Посмотреть</a>
 						</div>
 						<div class="hidden">
 							<div class="podrt_descr">
 								<div class="modal-box-content">
 									<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
-									<h3>Заголовок работы</h3>
+									<h3>Георгий Демин</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
-									<img src="img/portfolio-images/5.jpg" alt="Alt" />
+									<img src="img/portfolio-images/reader06.jpg" alt="Alt" />
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="mix col-md-3 col-sm-6 col-xs-12 portfolio_item category-3">
-						<img src="img/portfolio-images/6.jpg" alt="Alt" />
+						<img src="img/portfolio-images/reader07.jpg" alt="Alt" />
 						<div class="port_item_cont">
-							<h3>Заголовок работы</h3>
-							<p>Описание работы</p>
+							<h3>Антон Упаев</h3>
+							<p>Журналист</p>
 							<a href="#" class="popup_content">Посмотреть</a>
 						</div>
 						<div class="hidden">
 							<div class="podrt_descr">
 								<div class="modal-box-content">
 									<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
-									<h3>Заголовок работы</h3>
+									<h3>Антон Упаев</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
-									<img src="img/portfolio-images/6.jpg" alt="Alt" />
+									<img src="img/portfolio-images/reader07.jpg" alt="Alt" />
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="mix col-md-3 col-sm-6 col-xs-12 portfolio_item category-2">
-						<img src="img/portfolio-images/1.jpg" alt="Alt" />
+					<div class="mix col-md-3 col-sm-6 col-xs-12 portfolio_item category-4">
+						<img src="img/portfolio-images/reader08.jpg" alt="Alt" />
 						<div class="port_item_cont">
-							<h3>Заголовок работы</h3>
-							<p>Описание работы</p>
+							<h3>Александр Винокуров</h3>
+							<p>Журналист</p>
 							<a href="#" class="popup_content">Посмотреть</a>
 						</div>
 						<div class="hidden">
 							<div class="podrt_descr">
 								<div class="modal-box-content">
 									<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
-									<h3>Заголовок работы</h3>
+									<h3>Александр Винокуров</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
-									<img src="img/portfolio-images/1.jpg" alt="Alt" />
+									<img src="img/portfolio-images/reader08.jpg" alt="Alt" />
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			<div class="row">
+			<div class="wrapper"> <a href="#book">
+			 	<div class="down-btn animated" >
+					<div class="down-btn-inner icon-arrow icon-outer">
+					</div>
+					<svg class="down-btn-icon icon-inner" viewBox="0 0 39 62">
+    				<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-icon-arrow">
+						</use>
+					</svg>
+				</div>
+			</a></div>
+		</div>
 		</div>
 	</div>
 </section>
  
+<section id="book" class="bg_light">
 
-
-
-	<section id="video" class="s_about bg_dark">
-	<div class="section_header">
-		<h2>Обо мне</h2>
-		<div class="s_descr_wrap">
-			<div class="s_descr">Познакомимся ближе</div>
+		<div class="section_header section-description-dark">
+    		<div class="section-title">
+        	<div class="section-icon icon-outer">
+            <svg class="icon-inner" viewBox="0 0 90 90">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-icon-landing_themes">
+            		</use>
+          	</svg>
+        	</div>
+        	<h2 class="title">6 Писателей</h2>
+    		</div>
+    		<p class="section-summary uppercase">Писатели разных времен и стилей. Произведение по выбору или отрывок одного.</p>
 		</div>
-	</div>
-	<div class="section_content">
-		<div class="video">
-			<iframe id="ytplayer" type="text/html" width="720" height="405"
-src="https://www.youtube.com/embed/M7lc1UVf-VE?controls=0&enablejsapi=1&fs=0&rel=0&showinfo=0"
-frameborder="0" allowfullscreen></iframe>
-		</div>
-	
-	</div>
-</section>
 
-<section id="about" class="s_about bg_light">
-	<div class="section_header">
-		<h2>Обо мне</h2>
-		<div class="s_descr_wrap">
-			<div class="s_descr">Познакомимся ближе</div>
-		</div>
-	</div>
 	<div class="section_content">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-4 col-md-push-4 animation_1">
-					<h3>Фото</h3>
-					<div class="person">
-						<a href="img/photo.jpg" class="popup"><img src="img/photo.jpg" alt="Alt" /></a>
+
+<div class="row">
+				<div class="resume_container">
+					<div class="col-md-6 col-sm-6 left">
+						<h3>Автор</h3>
+					
+						<div class="resume_item">
+							<div class="year">Николай Васильевич Гоголь</div>
+							<div class="resume_description">русский прозаик, драматург, поэт, критик, публицист.</div>
+							<p>О свойствах своего таланта сам Гоголь говорил: «У меня только то и выходило хорошо, что взято было мной из действительности, из данных, мне известных». </p>
+						</div>
+						<div class="resume_item">
+							<div class="year">Михаил Афанасьевич Булгаков</div>
+							<div class="resume_description">русский писатель, драматург, театральный режиссёр и актёр.</div>
+							<p>Автор повестей и рассказов, множества фельетонов, пьес, инсценировок, киносценариев, оперных либретто.</p>
+						</div>
+						<div class="resume_item">
+							<div class="year">Даниил Иванович Хармс</div>
+							<div class="resume_description">русский писатель и поэт</div>
+							<p>С 1928 года Д. Хармс … даже не перепечатывает на машинке свои рукописи — за ненадобностью. И с этих пор все его рукописи … — это в полном смысле слова рукописи, автографы.</p>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6 right">
+						<h3>Произведение</h3>
+						
+						<div class="resume_item">
+							<div class="year">1809-1852</div>
+							<div class="resume_description">Вечера на хуторе близ Диканьки</div>
+							<div class="resume_description">Мертвые души</div>
+							
+							<div class="resume_description">Ревизор</div>
+							<p><br></p>
+							
+						</div>
+						<div class="resume_item">
+							<div class="year">1891-1940</div>
+							<div class="resume_description">Мастер и Маргарита</div>
+							<p>роман, 1929—1940, в СССР опубликован в 1966—1967 годах, второй вариант в 1973 году, окончательный вариант в 1990 году.</p>
+						</div>
+						<div class="resume_item">
+							<div class="year">1905-1942</div>
+							<div class="resume_description">Стихи и рассказы</div>
+							<p>...жизнь победила смерть неизвестным для меня способом....</p>
+						</div>
 					</div>
 				</div>
-				<div class="col-md-4 col-md-pull-4 animation_2">
-					<h3>Немного о себе</h3>
-					<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-					<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
+			</div>
+
+
+<div class="row">
+				<div class="col-md-12 center-block">
+					<div class="wrapper-dark"><a href="#places">
+						<div class="down-btn animated">
+							<div class="down-btn-inner icon-arrow icon-outer">
+							</div>
+								<svg class="down-btn-icon icon-inner" viewBox="0 0 39 62">
+    								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-icon-arrow">
+									</use>
+								</svg>
+							</div>
+						</div></a>
 				</div>
-				<div class="col-md-4 animation_3 personal_last_block">
-					<h3>Персональная информация</h3>
-					<h2 class="personal_header">Александр Прокопский</h2>
+			</div>
+		</div>
+	</div>
+	</section>
+
+
+
+	<section id="places" class="s_portfolio bg_dark">
+		<div class="section_header section-description">
+   		<div class="section-title">
+       	<div class="section-icon icon-outer">
+          <svg class="icon-inner" viewBox="0 0 90 90">
+  	        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-icon-landing_locations">
+         		</use>
+         	</svg>
+       	</div>
+       	<h2 class="title">5 мест проведения</h2>
+    	</div>
+   		<p class="section-summary uppercase">Иногда место проедения конкурса подсказывает само произведения, а иногда - погода</p>
+		</div>
+		<div class="section_content">
+			<div class="container">
+				<div class="row">
+					<div class="filter_div controls">
 					<ul>
-						<li>Профессиональное создание сайтов: разработка дизайна, HTML верстка, посадка на CMS WordPress</li>
-						<li>День рождения: 3 июня 1988 года</li>
-						<li>Номер телефона: +7 999 999 99 99</li>
-						<li>E-mail: <a href="mailto:youmail@mail.ru">youmail@mail.ru</a></li>
-						<li>Веб-сайт: <a href="//webdesign-master.ru" target="_blank">webdesign-master.ru</a></li>
+						<li class="filter active" data-filter="all">Все места</li>
+						<li class="filter" data-filter=".category-1">КемГУ</li>
+						<li class="filter" data-filter=".category-2">Театр Встреча</li>
+						<li class="filter" data-filter=".category-3">ТЦ Я</li>
+						<li class="filter" data-filter=".category-4">Кот да Винчи</li>
 					</ul>
-					<div class="social_wrap">
-						<ul>
-							<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fa fa-vk"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fa fa-github"></i></a></li>
-						</ul>
+				</div>
+				<div id="portfolio_grid">
+					<div class="mix col-md-3 col-sm-6 col-xs-12 portfolio_item category-1">
+						<img src="img/portfolio-images/reader01.jpg" alt="Alt" />
+						<div class="port_item_cont">
+							<h3>Сергей Сергеев</h3>
+							<p>Актер Театра "Встреча"</p>
+							<a href="#" class="popup_content">Посмотреть</a>
+						</div>
+						<div class="hidden">
+							<div class="podrt_descr">
+								<div class="modal-box-content">
+									<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
+									<h3>Сергей Сергеев</h3>
+									<p>Читал Габриэля Гарсия Маркеса,Чуковского, Булгакова. Лучшим пока не стал.</p>
+									<img src="img/portfolio-images/reader01.jpg" alt="Alt" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mix col-md-3 col-sm-6 col-xs-12 portfolio_item category-4">
+						<img src="img/portfolio-images/reader02.jpg" alt="Alt" />
+						<div class="port_item_cont">
+							<h3>Марк Бормосов</h3>
+							<p>Блоггер</p>
+							<a href="#" class="popup_content">Посмотреть</a>
+						</div>
+						<div class="hidden">
+							<div class="podrt_descr">
+								<div class="modal-box-content">
+									<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
+									<h3>Марк Бормосов</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+									<img src="img/portfolio-images/reader02.jpg" alt="Alt" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mix col-md-3 col-sm-6 col-xs-12 portfolio_item category-1">
+						<img src="img/portfolio-images/reader03.jpg" alt="Alt" />
+						<div class="port_item_cont">
+							<h3>Татьяна Кормщикова</h3>
+							<p>Актриса</p>
+							<a href="#" class="popup_content">Посмотреть</a>
+						</div>
+						<div class="hidden">
+							<div class="podrt_descr">
+								<div class="modal-box-content">
+									<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
+									<h3>Татьяна Кормщикова</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+									<img src="img/portfolio-images/reader03.jpg" alt="Alt" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mix col-md-3 col-sm-6 col-xs-12 portfolio_item category-2 category-1">
+						<img src="img/portfolio-images/reader04.jpg" alt="Alt" />
+						<div class="port_item_cont">
+							<h3>Алиса Стародубцева</h3>
+							<p>Студентка</p>
+							<a href="#" class="popup_content">Посмотреть</a>
+						</div>
+						<div class="hidden">
+							<div class="podrt_descr">
+								<div class="modal-box-content">
+									<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
+									<h3>Алиса Стародубцева</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+									<img src="img/portfolio-images/reader04.jpg" alt="Alt" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mix col-md-3 col-sm-6 col-xs-12 portfolio_item category-2">
+						<img src="img/portfolio-images/reader05.jpg" alt="Alt" />
+						<div class="port_item_cont">
+							<h3>Ольга Цыганкова</h3>
+							<p>Журналист</p>
+							<a href="#" class="popup_content">Посмотреть</a>
+						</div>
+						<div class="hidden">
+							<div class="podrt_descr">
+								<div class="modal-box-content">
+									<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
+									<h3>Ольга Цыганкова</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+									<img src="img/portfolio-images/reader05.jpg" alt="Alt" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mix col-md-3 col-sm-6 col-xs-12 portfolio_item category-3">
+						<img src="img/portfolio-images/reader06.jpg" alt="Alt" />
+						<div class="port_item_cont">
+							<h3>Георгий Демин</h3>
+							<p>Журналист</p>
+							<a href="#" class="popup_content">Посмотреть</a>
+						</div>
+						<div class="hidden">
+							<div class="podrt_descr">
+								<div class="modal-box-content">
+									<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
+									<h3>Георгий Демин</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+									<img src="img/portfolio-images/reader06.jpg" alt="Alt" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mix col-md-3 col-sm-6 col-xs-12 portfolio_item category-3">
+						<img src="img/portfolio-images/reader07.jpg" alt="Alt" />
+						<div class="port_item_cont">
+							<h3>Антон Упаев</h3>
+							<p>Журналист</p>
+							<a href="#" class="popup_content">Посмотреть</a>
+						</div>
+						<div class="hidden">
+							<div class="podrt_descr">
+								<div class="modal-box-content">
+									<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
+									<h3>Антон Упаев</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+									<img src="img/portfolio-images/reader07.jpg" alt="Alt" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mix col-md-3 col-sm-6 col-xs-12 portfolio_item category-4">
+						<img src="img/portfolio-images/reader08.jpg" alt="Alt" />
+						<div class="port_item_cont">
+							<h3>Александр Винокуров</h3>
+							<p>Журналист</p>
+							<a href="#" class="popup_content">Посмотреть</a>
+						</div>
+						<div class="hidden">
+							<div class="podrt_descr">
+								<div class="modal-box-content">
+									<button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
+									<h3>Александр Винокуров</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+									<img src="img/portfolio-images/reader08.jpg" alt="Alt" />
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-4"></div>
-				<div class="col-md-4">
-					<div class="wrapper"><a href="#reader">
-			 			<div class="arrow-icon icon border">
-			    				<div class="horizontal"></div>
-			     				<div class="vertical"></div>
-			    		</div></a>
+			<div class="wrapper"> <a href="#video">
+			 	<div class="down-btn animated" >
+					<div class="down-btn-inner icon-arrow icon-outer">
 					</div>
+					<svg class="down-btn-icon icon-inner" viewBox="0 0 39 62">
+    				<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-icon-arrow">
+						</use>
+					</svg>
 				</div>
-				<div class="col-md-4"></div>
-			</div>
+			</a></div>
+		</div>
 		</div>
 	</div>
 </section>
 
+	<section id="video" class="bg_light">
+		<div class="section_header section-description-dark">
+    	<div class="section-title">
+        <div class="section-icon icon-outer">
+          <svg class="icon-inner" viewBox="0 0 90 90">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-icon-landing_themes">
+           	</use>
+          </svg>
+        </div>
+        <h2 class="title">100 видеороликов</h2>
+    	</div>
+    	<p class="section-summary uppercase">Писатели разных времен и стилей. Произведение по выбору или отрывок одного.</p>
+		</div>
+		<div class="section_content">
+			<div class="video">
+				<iframe id="ytplayer" type="text/html" width="720" height="405"
+src="https://www.youtube.com/embed/M7lc1UVf-VE?controls=0&enablejsapi=1&fs=0&rel=0&showinfo=0"
+frameborder="0" allowfullscreen>
+				</iframe>
+			</div>
+		</div>
+</section>
+
+
+
+<footer class="main_footer bg_dark">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				&copy; 2015 Вадим Малиновский
+				<div class="social_wrap">
+					<ul>
+						<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#" target="_blank"><i class="fa fa-vk"></i></a></li>
+						<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#" target="_blank"><i class="fa fa-github"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
 	
 	<div class="hidden"></div>
 	<!--[if lt IE 9]>
