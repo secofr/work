@@ -55,6 +55,9 @@ $(".portfolio_item").each(function(i) {
 	$(".animation_3").animated("fadeInRight", "fadeOutRight");
 	$(".animation_1").animated("flipInY", "flipOutY");
 
+	$(".left .resume_item").animated("fadeInLeft", "fadeOutDown");
+	$(".right .resume_item").animated("fadeInRight", "fadeOutDown");
+	
 	function heightDetect() {
 		$(".main_head").css("height", $(window).height());
 	}
