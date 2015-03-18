@@ -280,8 +280,14 @@ $h: 3px
 
 .main_footer
 	padding: 50px 0
-	font-size: 12px
+	font-size: 13px
 	font-weight: 300
+	.social_wrap
+		float: right
+		line-height: 0
+		ul
+			margin: 0
+
 
 .person
 	text-align: center
@@ -317,13 +323,13 @@ $h: 3px
 		font-size: 28px
 		padding: 0 3px
 		
-$baseline: 24px
+//$baseline: 24px
 
 // Icon controllers
-$icon-size: 50px
-$icon-stroke-width: 3px
+//$icon-size: 50px
+//$icon-stroke-width: 3px
 
-$icon-trans: all .3s ease
+//$icon-trans: all .3s ease
 .top_centered_bottom
 	display: table-cell
 	text-align: center
@@ -379,9 +385,11 @@ $icon-trans: all .3s ease
 		text-align: center
 		//width: 33.3%
 		//float: left
-		height: 10em
+		//height: 10em
+		padding-top: 3em
+		padding-bottom: 1em
 		position: relative
-		//border-right: solid 1px rgba(107,107,107,.9)
+		border-right: solid 1px rgba(107,107,107,.1)
 		svg
 			margin-top: 1.3em
 			width: 5.625em
@@ -445,7 +453,8 @@ $icon-trans: all .3s ease
 	.down-btn-inner
 		width: 4.25em
 		height: 4.25em
-		border: .225em solid #41bfe9
+		//border: .225em solid #41bfe9
+		//border: .225em solid #9e9e9e
 		position: absolute
 	//.icon-arrow
 	.icon-outer
@@ -456,23 +465,26 @@ $icon-trans: all .3s ease
 		transform: rotate(90deg)
 		width: 1em
 		height: 2em
-		fill: #41bfe9
+		//fill: #41bfe9
+		//fill: #9e9e9e
 		margin: 1.275em 0 0 1.5525em
 	
 
-.section-description
+.section-description,
+.section-description-dark
 	margin-bottom: 3.5em
 	p
 		text-align: center
-		color: #9e9e9e
+		//color: #9e9e9e
 		padding: 0 8em
 		margin: 0
 	h2
-		font-weight: 300
+		font-weight: 400
 		font-size: 2.5em
 		display: inline-block
 		top: -.25em
 		position: relative
+	
 	.section-title
 		position: relative
 		text-align: center
@@ -482,12 +494,13 @@ $icon-trans: all .3s ease
 		display: inline-block
 		margin-right: .875em
 	.icon-outer
-		border: .125em solid #fff
+		//border: .125em solid #fff
 		border-radius: 50%
 		width: 3.125em
 		height: 3.125em
 	.icon-inner
-		fill: #fff
+		//fill: #fff
+
 
 //Portfolio css
 .s_portfolio
@@ -560,3 +573,47 @@ $icon-trans: all .3s ease
 	position: relative
 
 
+.resume_container
+	.left .resume_description strong
+		margin-left: 10px
+	.right .resume_description strong
+		margin-right: 10px
+	.left
+		text-align: right
+		border-right: #d2d2d2 1px solid
+		h3
+			text-align: right
+	.right
+		text-align: left
+		h3
+			text-align: left
+	h3
+		margin-top: 30px
+	.year
+		font-weight: 600
+		font-style: italic
+		display: inline-block
+		padding: 0 15px
+		margin-bottom: 15px
+	strong
+		font-weight: 600
+		font-style: normal
+		text-transform: uppercase
+	.resume_description
+		font-style: italic
+	.resume_item
+		margin-bottom: 40px
+		p
+			margin-top: 10px
+		&:last-child
+			margin-bottom: 0
+			p
+				margin-bottom: 0
+
+.resume_icon
+	font-size: 40px
+	margin-bottom: 35px
+	.year
+		display: inline-block
+		margin-bottom: 15px
+		padding: 0 10px
