@@ -37,6 +37,16 @@ $(".portfolio_item").each(function(i) {
 		$(this).removeClass("flip"); // Убираем класс
 	});
 
+	$("div.person_mnu.animated").hover(
+	function() {
+		$(this).addClass("bounce"); // Добавляем класс bounce
+	},
+     function() {
+		$(this).removeClass("bounce"); // Убираем класс
+	});
+
+
+
 	$(".wrapper a").mPageScroll2id();
 	$(".wrapper-dark a").mPageScroll2id();
 	$(".top_mnu ul a").mPageScroll2id();
@@ -64,12 +74,31 @@ $(".portfolio_item").each(function(i) {
 
 	heightDetect();
 
+	function winDetect() {
+		$("#video").css("height", $(window).height());
+		$("#video").css("width", $(window).width());
+		$("#video_player").attr("width",$(window).width());
+		$("#video_player").attr("height",$(window).width()*9/16);
+	}
+	
+	winDetect();
+
 	$(window).resize(function() {
 		heightDetect();
+		winDetect();
 	});
 
+	 
 	$(".toggle_mnu").click(function() {
 		$(".sandwich").toggleClass("active");
+	});
+
+
+	$(".mnu_item").click(function() {
+		$(".top_text2").css("opacity", ".5");
+		$(".top_text2").fadeOut(600);
+		$("#video_player").attr("src","https://www.youtube.com/embed/zDRQrmyZAEw?enablejsapi=1&amp;autoplay=1&amp;autohide=0&amp;controls=0&amp;showinfo=0&amp;cc_load_policy=3&amp;rel=0&amp;vq=hd1080&amp;html5=0&amp;wmode=transparent&amp;start=100&amp;origin=https%3A%2F%2Fwww.facebook.com/events/755362334571253/");
+
 	});
 
 	$(".top_mnu ul a").click(function() {
@@ -98,4 +127,6 @@ $(window).load(function() {
 
 	$(".top_text h1").animated("fadeInDown", "fadeOutUp");
 	$(".top_text h2, .section_header").animated("fadeInUp", "fadeOutDown");
+	$(".top_text2 h1").animated("fadeInDown", "fadeOutUp");
+	$(".top_text2 h2").animated("fadeInUp", "fadeOutDown");
 });
