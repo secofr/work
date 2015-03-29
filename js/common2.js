@@ -77,8 +77,8 @@ $(".portfolio_item").each(function(i) {
 	function winDetect() {
 		$("#video").css("height", $(window).height());
 		$("#video").css("width", $(window).width());
-		$("#video_player").attr("width",$(window).width());
-		$("#video_player").attr("height",$(window).width()*9/16);
+		$("#ytplayer").attr("width",$(window).width());
+		$("#ytplayer").attr("height",$(window).width()*9/16);
 	}
 	
 	winDetect();

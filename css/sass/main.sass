@@ -282,9 +282,26 @@ $h: 3px
 	padding: 50px 0
 	font-size: 13px
 	font-weight: 300
-	.social_wrap
+	.social_wrap_foot
+		width: 160px
+		height: 60px
+		//position: absolute
+		z-index: 100
+		border: none
 		float: right
-		line-height: 0
+		padding: 0
+		//vertical-align: center
+		//background-color: #000
+		//left: -20px
+		//top: 10px
+		ul
+			padding-left: 13px
+		li
+			display: inline-block
+			font-size: 28px
+			padding: 0 3px
+			float: right
+			line-height: 0
 		ul
 			margin: 0
 
@@ -305,19 +322,20 @@ $h: 3px
 		list-style-type: none
 	li
 		margin-bottom: 10px
-	.social_wrap
-		margin-top: 25px
+
 
 .social_wrap
-	width: 260px
+	width: 160px
 	height: 60px
-	position: relative
+	position: absolute
 	z-index: 100
 	border: none
-	vertical-align: center
-	//left: 20px
+	//vertical-align: center
+	background-color: #000
+	//left: -20px
 	//top: 10px
-	
+	ul
+		padding-left: 13px
 	li
 		display: inline-block
 		font-size: 28px
@@ -764,3 +782,166 @@ $h: 3px
 			font-weight: 300
 			font-size: 1em
 			+animation-delay(4s)
+
+
+.os-phrases h2 
+	//font-family: 'Dosis', 'Lato', sans-serif
+	font-size: 70px
+	//font-weight: 200
+	width: 100%
+	overflow: hidden
+	text-transform: uppercase
+	padding: 0
+	margin: 0
+	position: absolute
+	//top: 0
+	//left: 0
+	letter-spacing: 14px
+	text-align: center
+
+
+.os-phrases h2,
+.os-phrases h2 
+	span 
+		height: 100%
+		/* Centering with flexbox */
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+
+
+.os-phrases h2 > span 
+	margin: 0 15px
+
+
+.os-phrases h2 > span > span 
+	display: inline-block
+	perspective: 1000px
+	transform-origin: 50% 50%
+
+
+.os-phrases h2 > span > span > span 
+	display: inline-block
+	color: hsla(0,0%,0%,0)
+	transform-style: preserve-3d
+	transform: translate3d(0,0,0)
+	animation: OpeningSequence 4.2s linear forwards
+
+
+.os-phrases h2:nth-child(2) > span > span > span 
+	font-size: 100px
+	+animation-delay (4s)
+
+
+.os-phrases h2:nth-child(3) > span > span > span 
+	font-size: 30px
+	animation: FadeInOut 6s linear 9s forwards
+
+.os-phrases h2:nth-child(4) > span > span > span 
+	+animation-delay (15s)
+
+
+.os-phrases h2:nth-child(5) > span > span > span 
+	font-size: 100px
+	+animation-delay (19s)
+	+animation-duration (8s)
+
+.os-phrases h2:nth-child(6) > span > span > span 
+	font-size: 150px
+	animation: OpeningSequenceIn 4s linear 27s forwards
+	//-webkit-animation-delay: 34s;
+	//-moz-animation-delay: 34s;
+	//animation-delay: 34s;
+	//-webkit-animation-duration: 8s;
+	//-moz-animation-duration: 8s;
+	//animation-duration: 8s;
+
+
+
+@keyframes OpeningSequenceIn 
+	0% 
+		text-shadow: 0 0 50px #fff
+		letter-spacing: 80px
+		opacity: 0.2
+		transform: rotateY(-90deg)
+	
+	100% 
+		text-shadow: 0 0 1px #fff
+		letter-spacing: 14px
+		opacity: 0.8
+		transform: rotateY(0deg)
+	
+
+
+
+
+
+.os-phrases h2:nth-child(7) > span > span > span 
+	+animation-delay (38s)
+
+
+@keyframes OpeningSequence 
+	0% 
+		text-shadow: 0 0 50px #fff
+		letter-spacing: 80px
+		opacity: 0.2
+		transform: rotateY(-90deg)
+	
+	50% 
+		text-shadow: 0 0 1px #fff
+		letter-spacing: 14px
+		opacity: 0.8
+		transform: rotateY(0deg)
+	
+	85% 
+		text-shadow: 0 0 1px #fff
+		opacity: 0.8
+		transform: rotateY(0deg) translateZ(100px)
+	
+	100% 
+		text-shadow: 0 0 10px #fff
+		opacity: 0
+		transform: translateZ(130px)
+		pointer-events: none
+	
+
+
+.os-phrases h2:nth-child(8) > span > span > span 
+	font-size: 30px
+	animation: FadeInOut 4s linear 40s forwards
+
+@keyframes FadeInOut 
+	0% 
+		opacity: 0
+		text-shadow: 0 0 50px #fff
+	
+	30% 
+		opacity: 0.8
+		text-shadow: 0 0 1px #fff
+
+	70% 
+		opacity: 0.8
+		text-shadow: 0 0 1px #fff
+
+	
+	100% 
+		opacity: 0
+		text-shadow: 0 0 50px #fff
+	
+
+
+/* Bold words */
+.os-phrases h2:first-child .word3,
+.os-phrases h2:nth-child(2) .word2,
+.os-phrases h2:nth-child(4) .word2 
+	font-weight: 600
+
+.social
+	//width: 60px
+	//height: 60px
+	position: fixed
+	z-index: 100
+	border: none
+	left: 20px
+	top: 20px

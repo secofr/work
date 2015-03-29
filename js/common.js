@@ -1,8 +1,11 @@
 
 $(document).ready(function() {
 	
+$("#os-phrases > h2").lettering('words').children("span").lettering().children("span").lettering(); 
 
 	$("#portfolio_grid").mixItUp();
+
+	$("#portfolio_grid2").mixItUp();
 
 	$(".s_portfolio li").click(function() {
 		$(".s_portfolio li").removeClass("active");
