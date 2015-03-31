@@ -1,0 +1,177 @@
+@import "../bourbon/bourbon"
+
+//$color: #FF6347 //Theme skin
+$color: #4f9edb
+$text_color: #888
+$main_color: #222
+$bg_light: #FAFAFA
+$icon_color: #fff
+$icon-stroke-width: 3px
+
+@mixin kerning($kerning)
+	letter-spacing: $kerning + px
+
+body
+	color: $main_color
+	+kerning(1)
+
+a
+	color: $color
+
+p,
+body .main_footer,
+.s_about li,
+.main_head li
+	color: $text_color
+
+.color_element
+	color: $color
+.color_bg
+	background-color: $color
+.color_border
+	border-color: $color
+
+.bg_light
+	background-color: $bg_light
+.bg_dark
+	background-color: $main_color
+	color: #fff
+	.s_descr::after
+		background-color: #fff
+	a
+		color: #fff
+
+.main_color_bg
+	background-color: $main_color
+
+
+//svg
+//	path
+//		fill: $icon_color
+
+.main_about
+	p
+		color: $bg_light
+
+.top_mnu
+	a:hover
+		color: $color
+	a
+		+kerning(4)
+
+.top_text
+	p
+		color: $bg_light
+		+kerning(5)
+	h2
+		color: $bg_light
+		+kerning(16)
+.top_text2
+	h2
+		+kerning(2)
+	h3
+		+kerning(5)
+	h4
+		+kerning(11)
+
+
+.personal_header
+	+kerning(2)
+
+.s_descr
+	+kerning(5)
+	&::after
+		background-color: $main_color
+
+section
+	h3
+		+kerning(3)
+		color: $text_color
+
+.s_about
+	p
+		&:nth-child(even)
+			color: $color
+.social_wrap
+	a
+		color: $icon_color
+	p
+		&:nth-child(even)
+			color: $color
+
+// Icon controllers
+.wrapper
+	.border 
+		border: $icon-stroke-width solid $icon_color
+		border-radius: 50%
+			
+.wrapper-dark
+	.border
+		border: $icon-stroke-width solid $main_color
+		border-radius: 50%
+
+.section-description
+	p
+		color: #9e9e9e
+	
+	h2
+		color: #fff
+	.icon-outer
+		border: .125em solid #fff
+	
+	.icon-inner
+		fill: #fff
+
+
+.section-description-dark
+	p
+		color: #9e9e9e
+	
+	h2
+		color: #000
+	.icon-outer
+		border: .125em solid #000
+	
+	.icon-inner
+		fill: #000
+
+.resume_container
+	h3
+		color: $main_color
+		+kerning(1)
+		font-size: 16px
+		font-weight: 600
+
+.resume_item
+	.year
+		background-color: $color
+		color: #fff
+	.resume_description
+		+kerning(1)
+
+.s_portfolio
+	li
+		color: $text_color
+		+kerning(2)
+	li.active
+		color: #fff
+		border-bottom: 1px solid $color
+
+.portfolio_item .port_item_cont
+	a
+		border-color: $color
+		color: $color
+
+.main_footer a
+	color: $color
+
+.popup_content
+	+kerning(1)
+
+.down-btn
+	.down-btn-inner
+		border: .225em solid $color
+	.down-btn-icon
+		fill: $color
+		
+	

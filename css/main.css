@@ -648,14 +648,14 @@ section {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1010;
-  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 10;
   opacity: 1; }
   .top_wrapper2 .top_descr2 {
     display: table-row; }
     .top_wrapper2 .top_descr2 .top_centered2 {
       display: table-cell;
-      text-align: center; }
+      text-align: center;
+      vertical-align: middle; }
   .top_wrapper2 .top_text2 {
     display: inline-block; }
     .top_wrapper2 .top_text2 p {
