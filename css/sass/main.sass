@@ -1399,3 +1399,69 @@ $h: 3px
 
 .video-block
 	text-align: center
+
+@import url(http://fonts.googleapis.com/css?family=Istok+Web)
+@keyframes slidy 
+	0% 
+		left: 0%
+	15% 
+		left: 0%
+	19% 
+		left: -99.6%
+	34% 
+		left: -99.6%
+	38% 
+		left: -199.2%
+	53% 
+		left: -199.2%
+	57% 
+		left: -298.8%
+	72% 
+		left: -298.8%
+	76%
+		left: -398.4%
+	91%
+		left: -398.4%	
+	100%
+		left: -498%
+	
+figure 
+	margin: 0 
+	background: #101010
+	font-family: Istok Web, sans-serif
+	font-weight: 100
+
+div#captioned-gallery 
+	width: 99.6%
+	overflow: hidden
+
+figure.slider 
+	position: relative
+	width: 597.6%
+	font-size: 0 
+	animation: 30s slidy infinite
+
+figure.slider 
+	figure 
+		width: 16.6666%
+		height: auto
+		display: inline-block
+		position: inherit
+
+figure.slider 
+	img  
+		width: 100% 
+		height: auto
+
+
+figure.slider 
+	figure 
+		figcaption  
+			position: absolute
+			bottom: 0
+			background: rgba(0,0,0,0.4)
+			color: #fff
+			width: 100%
+			font-size: 2rem
+			padding: .6rem
+
