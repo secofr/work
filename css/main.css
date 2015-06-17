@@ -150,8 +150,7 @@ section {
   background: white;
   border: none;
   border-radius: 4px 4px 4px 4px;
-  -webkit-transition: -webkit-transform 0.5s, top 0.2s;
-          transition: transform 0.5s, top 0.2s;
+  transition: transform 0.5s, top 0.2s;
   display: block; }
 
 /* line 151, sass/main.sass */
@@ -163,10 +162,8 @@ section {
   background: white;
   border: none;
   border-radius: 4px 4px 4px 4px;
-  -webkit-transition: -webkit-transform 0.5s, top 0.2s;
-          transition: transform 0.5s, top 0.2s;
-  -webkit-transition-delay: 0.2s, 0s;
-          transition-delay: 0.2s, 0s; }
+  transition: transform 0.5s, top 0.2s;
+  transition-delay: 0.2s, 0s; }
 
 /* line 163, sass/main.sass */
 .sw-footer {
@@ -177,30 +174,22 @@ section {
   background: white;
   border: none;
   border-radius: 4px 4px 4px 4px;
-  -webkit-transition: all 0.5s;
-          transition: all 0.5s;
-  -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s; }
+  transition: all 0.5s;
+  transition-delay: 0.1s; }
 
 /* line 175, sass/main.sass */
 .sandwich.active .sw-topper {
   top: 9px;
-  -webkit-transform: rotate(135deg);
-      -ms-transform: rotate(135deg);
-          transform: rotate(135deg); }
+  transform: rotate(135deg); }
 /* line 178, sass/main.sass */
 .sandwich.active .sw-bottom {
   top: 6px;
-  -webkit-transform: rotate(-135deg);
-      -ms-transform: rotate(-135deg);
-          transform: rotate(-135deg); }
+  transform: rotate(-135deg); }
 /* line 181, sass/main.sass */
 .sandwich.active .sw-footer {
   opacity: 0;
   top: 0;
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg); }
+  transform: rotate(180deg); }
 
 /* line 186, sass/main.sass */
 .top_mnu {
@@ -225,18 +214,22 @@ section {
     /* line 204, sass/main.sass */
     .top_mnu ul li:nth-child(1) a {
       -webkit-animation-duration: 0.5s;
+      -moz-animation-duration: 0.5s;
       animation-duration: 0.5s; }
     /* line 206, sass/main.sass */
     .top_mnu ul li:nth-child(2) a {
       -webkit-animation-duration: 1s;
+      -moz-animation-duration: 1s;
       animation-duration: 1s; }
     /* line 208, sass/main.sass */
     .top_mnu ul li:nth-child(3) a {
       -webkit-animation-duration: 1.5s;
+      -moz-animation-duration: 1.5s;
       animation-duration: 1.5s; }
     /* line 210, sass/main.sass */
     .top_mnu ul li:nth-child(4) a {
       -webkit-animation-duration: 2s;
+      -moz-animation-duration: 2s;
       animation-duration: 2s; }
     /* line 212, sass/main.sass */
     .top_mnu ul a {
@@ -255,6 +248,7 @@ section {
         left: 0;
         height: 100%;
         -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
         transition: all 0.5s ease; }
         /* line 228, sass/main.sass */
         .top_mnu ul a span:hover {
@@ -285,6 +279,7 @@ section {
       margin: 0;
       text-transform: uppercase;
       -webkit-animation-delay: 1.5s;
+      -moz-animation-delay: 1.5s;
       animation-delay: 1.5s; }
     /* line 254, sass/main.sass */
     .top_wrapper .top_text h1 {
@@ -297,6 +292,7 @@ section {
       margin-left: 0px;
       margin-right: 0px;
       -webkit-animation-delay: 1s;
+      -moz-animation-delay: 1s;
       animation-delay: 1s; }
     /* line 267, sass/main.sass */
     .top_wrapper .top_text h2 {
@@ -306,6 +302,7 @@ section {
       font-weight: bold;
       font-size: 1em;
       -webkit-animation-delay: 1s;
+      -moz-animation-delay: 1s;
       animation-delay: 1s; }
 
 /* line 278, sass/main.sass */
@@ -403,7 +400,7 @@ section {
     color: #4f9edb;
     stroke: #4f9edb; }
     /* line 384, sass/main.sass */
-    .landing-page .location-detail p {
+    .landing-page .location-detail p, .landing-page .location-detail h1 {
       color: #4f9edb; }
     /* line 386, sass/main.sass */
     .landing-page .location-detail svg {
@@ -413,7 +410,7 @@ section {
     color: #6bc361;
     stroke: #6bc361; }
     /* line 391, sass/main.sass */
-    .landing-page .book-detail p {
+    .landing-page .book-detail p, .landing-page .book-detail h1 {
       color: #6bc361; }
     /* line 393, sass/main.sass */
     .landing-page .book-detail svg {
@@ -423,7 +420,7 @@ section {
     color: #41bfe9;
     stroke: #41bfe9; }
     /* line 398, sass/main.sass */
-    .landing-page .themes-detail p {
+    .landing-page .themes-detail p, .landing-page .themes-detail h1 {
       color: #41bfe9; }
     /* line 400, sass/main.sass */
     .landing-page .themes-detail svg {
@@ -509,9 +506,7 @@ section {
     height: 4.125em; }
   /* line 482, sass/main.sass */
   .down-btn .down-btn-icon {
-    -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-            transform: rotate(90deg);
+    transform: rotate(90deg);
     width: 1em;
     height: 2em;
     margin: 1.275em 0 0 1.5525em; }
@@ -590,8 +585,7 @@ section {
     text-align: center;
     padding-top: 15%;
     opacity: 0;
-    -webkit-transition: all 0.5s;
-            transition: all 0.5s; }
+    transition: all 0.5s; }
   /* line 557, sass/main.sass */
   .portfolio_item:hover .port_item_cont {
     opacity: 1;
@@ -682,10 +676,10 @@ section {
     margin-top: 10px; }
   /* line 626, sass/main.sass */
   .resume_container .resume_item:last-child {
-    margin-bottom: 0; }
+    margin-bottom: 80; }
     /* line 628, sass/main.sass */
     .resume_container .resume_item:last-child p {
-      margin-bottom: 0; }
+      margin-bottom: 80; }
 
 /* line 631, sass/main.sass */
 .resume_icon {
@@ -794,6 +788,7 @@ section {
       margin: 0;
       text-transform: uppercase;
       -webkit-animation-delay: 1.5s;
+      -moz-animation-delay: 1.5s;
       animation-delay: 1.5s; }
     /* line 747, sass/main.sass */
     .top_wrapper2 .top_text2 h1 {
@@ -806,6 +801,7 @@ section {
       margin-left: 0px;
       margin-right: 0px;
       -webkit-animation-delay: 1s;
+      -moz-animation-delay: 1s;
       animation-delay: 1s; }
     /* line 761, sass/main.sass */
     .top_wrapper2 .top_text2 h2 {
@@ -815,6 +811,7 @@ section {
       font-weight: bold;
       font-size: 3em;
       -webkit-animation-delay: 2s;
+      -moz-animation-delay: 2s;
       animation-delay: 2s; }
     /* line 771, sass/main.sass */
     .top_wrapper2 .top_text2 h3 {
@@ -824,6 +821,7 @@ section {
       font-weight: 300;
       font-size: 2em;
       -webkit-animation-delay: 3s;
+      -moz-animation-delay: 3s;
       animation-delay: 3s; }
     /* line 778, sass/main.sass */
     .top_wrapper2 .top_text2 h4 {
@@ -833,6 +831,7 @@ section {
       font-weight: 300;
       font-size: 1em;
       -webkit-animation-delay: 4s;
+      -moz-animation-delay: 4s;
       animation-delay: 4s; }
 
 /* line 787, sass/main.sass */
@@ -852,23 +851,10 @@ section {
 .os-phrases h2 span {
   height: 100%;
   /* Centering with flexbox */
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
 
 /* line 814, sass/main.sass */
 .os-phrases h2 > span {
@@ -877,154 +863,91 @@ section {
 /* line 818, sass/main.sass */
 .os-phrases h2 > span > span {
   display: inline-block;
-  -webkit-perspective: 1000px;
-          perspective: 1000px;
-  -webkit-transform-origin: 50% 50%;
-      -ms-transform-origin: 50% 50%;
-          transform-origin: 50% 50%; }
+  perspective: 1000px;
+  transform-origin: 50% 50%; }
 
 /* line 824, sass/main.sass */
 .os-phrases h2 > span > span > span {
   display: inline-block;
   color: transparent;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-  -webkit-animation: OpeningSequence 4.2s linear forwards;
-          animation: OpeningSequence 4.2s linear forwards; }
+  transform-style: preserve-3d;
+  transform: translate3d(0, 0, 0);
+  animation: OpeningSequence 4.2s linear forwards; }
 
 /* line 832, sass/main.sass */
 .os-phrases h2:nth-child(2) > span > span > span {
   font-size: 100px;
   -webkit-animation-delay: 4s;
+  -moz-animation-delay: 4s;
   animation-delay: 4s; }
 
 /* line 837, sass/main.sass */
 .os-phrases h2:nth-child(3) > span > span > span {
   font-size: 30px;
-  -webkit-animation: FadeInOut 6s linear 9s forwards;
-          animation: FadeInOut 6s linear 9s forwards; }
+  animation: FadeInOut 6s linear 9s forwards; }
 
 /* line 841, sass/main.sass */
 .os-phrases h2:nth-child(4) > span > span > span {
   -webkit-animation-delay: 15s;
+  -moz-animation-delay: 15s;
   animation-delay: 15s; }
 
 /* line 845, sass/main.sass */
 .os-phrases h2:nth-child(5) > span > span > span {
   font-size: 100px;
   -webkit-animation-delay: 19s;
+  -moz-animation-delay: 19s;
   animation-delay: 19s;
   -webkit-animation-duration: 8s;
+  -moz-animation-duration: 8s;
   animation-duration: 8s; }
 
 /* line 850, sass/main.sass */
 .os-phrases h2:nth-child(6) > span > span > span {
   font-size: 150px;
-  -webkit-animation: OpeningSequenceIn 4s linear 27s forwards;
-          animation: OpeningSequenceIn 4s linear 27s forwards; }
-
-@-webkit-keyframes OpeningSequenceIn {
-  0% {
-    text-shadow: 0 0 50px #fff;
-    letter-spacing: 80px;
-    opacity: 0.2;
-    -webkit-transform: rotateY(-90deg);
-            transform: rotateY(-90deg); }
-  100% {
-    text-shadow: 0 0 1px #fff;
-    letter-spacing: 14px;
-    opacity: 0.8;
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg); } }
+  animation: OpeningSequenceIn 4s linear 27s forwards; }
 
 @keyframes OpeningSequenceIn {
   0% {
     text-shadow: 0 0 50px #fff;
     letter-spacing: 80px;
     opacity: 0.2;
-    -webkit-transform: rotateY(-90deg);
-            transform: rotateY(-90deg); }
+    transform: rotateY(-90deg); }
   100% {
     text-shadow: 0 0 1px #fff;
     letter-spacing: 14px;
     opacity: 0.8;
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg); } }
+    transform: rotateY(0deg); } }
 /* line 880, sass/main.sass */
 .os-phrases h2:nth-child(7) > span > span > span {
   -webkit-animation-delay: 38s;
+  -moz-animation-delay: 38s;
   animation-delay: 38s; }
-
-@-webkit-keyframes OpeningSequence {
-  0% {
-    text-shadow: 0 0 50px #fff;
-    letter-spacing: 80px;
-    opacity: 0.2;
-    -webkit-transform: rotateY(-90deg);
-            transform: rotateY(-90deg); }
-  50% {
-    text-shadow: 0 0 1px #fff;
-    letter-spacing: 14px;
-    opacity: 0.8;
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg); }
-  85% {
-    text-shadow: 0 0 1px #fff;
-    opacity: 0.8;
-    -webkit-transform: rotateY(0deg) translateZ(100px);
-            transform: rotateY(0deg) translateZ(100px); }
-  100% {
-    text-shadow: 0 0 10px #fff;
-    opacity: 0;
-    -webkit-transform: translateZ(130px);
-            transform: translateZ(130px);
-    pointer-events: none; } }
 
 @keyframes OpeningSequence {
   0% {
     text-shadow: 0 0 50px #fff;
     letter-spacing: 80px;
     opacity: 0.2;
-    -webkit-transform: rotateY(-90deg);
-            transform: rotateY(-90deg); }
+    transform: rotateY(-90deg); }
   50% {
     text-shadow: 0 0 1px #fff;
     letter-spacing: 14px;
     opacity: 0.8;
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg); }
+    transform: rotateY(0deg); }
   85% {
     text-shadow: 0 0 1px #fff;
     opacity: 0.8;
-    -webkit-transform: rotateY(0deg) translateZ(100px);
-            transform: rotateY(0deg) translateZ(100px); }
+    transform: rotateY(0deg) translateZ(100px); }
   100% {
     text-shadow: 0 0 10px #fff;
     opacity: 0;
-    -webkit-transform: translateZ(130px);
-            transform: translateZ(130px);
+    transform: translateZ(130px);
     pointer-events: none; } }
 /* line 910, sass/main.sass */
 .os-phrases h2:nth-child(8) > span > span > span {
   font-size: 30px;
-  -webkit-animation: FadeInOut 4s linear 40s forwards;
-          animation: FadeInOut 4s linear 40s forwards; }
-
-@-webkit-keyframes FadeInOut {
-  0% {
-    opacity: 0;
-    text-shadow: 0 0 50px #fff; }
-  30% {
-    opacity: 0.8;
-    text-shadow: 0 0 1px #fff; }
-  70% {
-    opacity: 0.8;
-    text-shadow: 0 0 1px #fff; }
-  100% {
-    opacity: 0;
-    text-shadow: 0 0 50px #fff; } }
+  animation: FadeInOut 4s linear 40s forwards; }
 
 @keyframes FadeInOut {
   0% {
@@ -1076,7 +999,6 @@ section {
     top: 0;
     right: 0;
     background-size: 100%;
-    background-image: -webkit-linear-gradient(left, transparent, rgba(0, 0, 0, 0.49));
     background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.49));
     visibility: inherit;
     opacity: 1; }
@@ -1102,27 +1024,22 @@ section {
       height: 45px;
       border: 2px solid #2db90c;
       border-radius: 23px;
-      -webkit-transform: translate3d(0px, 138px, 0px);
-              transform: translate3d(0px, 138px, 0px);
+      transform: translate3d(0px, 138px, 0px);
       cursor: pointer;
-      -ms-touch-action: none;
-          touch-action: none;
+      touch-action: none;
       z-index: 1002;
       hover-border-width: 3px; }
       /* line 1006, sass/main.sass */
       .handle .handle-slider .handle-grip .icons {
         opacity: 1;
-        -webkit-transform: scale(1, 1);
-            -ms-transform: scale(1, 1);
-                transform: scale(1, 1); }
+        transform: scale(1, 1); }
       /* line 1009, sass/main.sass */
       .handle .handle-slider .handle-grip .icons,
       .handle .handle-slider .handle-grip .playhead {
         position: absolute;
         width: 100%;
         height: 100%;
-        -webkit-transition: -webkit-transform 525ms cubic-bezier(0.62, 0.1, 0, 1), opacity 408ms cubic-bezier(0.62, 0.1, 0, 1);
-                transition: transform 525ms cubic-bezier(0.62, 0.1, 0, 1), opacity 408ms cubic-bezier(0.62, 0.1, 0, 1);
+        transition: transform 525ms cubic-bezier(0.62, 0.1, 0, 1), opacity 408ms cubic-bezier(0.62, 0.1, 0, 1);
         pointer-events: none; }
       /* line 1016, sass/main.sass */
       .handle .handle-slider .handle-grip .icon {
@@ -1134,63 +1051,48 @@ section {
       /* line 1022, sass/main.sass */
       .handle .handle-slider .handle-grip .icon.up-fast {
         top: -10px;
-        -webkit-transform: scale(-0.5, -0.5);
-            -ms-transform: scale(-0.5, -0.5);
-                transform: scale(-0.5, -0.5);
+        transform: scale(-0.5, -0.5);
         opacity: 0;
         width: 12px;
         height: 7px; }
       /* line 1028, sass/main.sass */
       .handle .handle-slider .handle-grip .icon.icon-up {
-        -webkit-transform: rotate(180deg);
-            -ms-transform: rotate(180deg);
-                transform: rotate(180deg);
-        -webkit-transition: top 200ms ease-out, -webkit-transform 200ms ease-out, opacity 200ms ease-out;
-                transition: top 200ms ease-out, transform 200ms ease-out, opacity 200ms ease-out;
+        transform: rotate(180deg);
+        transition: top 200ms ease-out, transform 200ms ease-out, opacity 200ms ease-out;
         hover-margin-top: -1px; }
       /* line 1033, sass/main.sass */
       .handle .handle-slider .handle-grip .icon.up {
         top: 9px;
-        -webkit-transform: scale(-1.05, -1.05);
-            -ms-transform: scale(-1.05, -1.05);
-                transform: scale(-1.05, -1.05);
+        transform: scale(-1.05, -1.05);
         opacity: 1;
         width: 12px;
         height: 7px; }
       /* line 1039, sass/main.sass */
       .handle .handle-slider .handle-grip .icon.down {
         bottom: 9px;
-        -webkit-transform: scale(1.05, 1.05);
-            -ms-transform: scale(1.05, 1.05);
-                transform: scale(1.05, 1.05);
+        transform: scale(1.05, 1.05);
         opacity: 1;
         width: 12px;
         height: 7px; }
       /* line 1045, sass/main.sass */
       .handle .handle-slider .handle-grip .icon.icon-down {
-        -webkit-transition: bottom 200ms ease-out, -webkit-transform 200ms ease-out, opacity 200ms ease-out;
-                transition: bottom 200ms ease-out, transform 200ms ease-out, opacity 200ms ease-out;
+        transition: bottom 200ms ease-out, transform 200ms ease-out, opacity 200ms ease-out;
         hover-margin-bottom: -1px; }
       /* line 1049, sass/main.sass */
       .handle .handle-slider .handle-grip .icon.down-fast {
         bottom: -10px;
-        -webkit-transform: scale(0.5, 0.5);
-            -ms-transform: scale(0.5, 0.5);
-                transform: scale(0.5, 0.5);
+        transform: scale(0.5, 0.5);
         opacity: 0;
         width: 12px;
         height: 7px; }
       /* line 1055, sass/main.sass */
       .handle .handle-slider .handle-grip .playhead {
         opacity: 0;
-        -webkit-transform: scale(0.32, 0.32);
-            -ms-transform: scale(0.32, 0.32);
-                transform: scale(0.32, 0.32);
+        transform: scale(0.32, 0.32);
         position: absolute;
         width: 100%;
         height: 100%;
-        -webkit-transition: -webkit-transform 525ms cubic-bezier(0.62, 0.1, 0, 1), opacity 408ms cubic-bezier(0.62, 0.1, 0, 1);
-                transition: transform 525ms cubic-bezier(0.62, 0.1, 0, 1), opacity 408ms cubic-bezier(0.62, 0.1, 0, 1);
+        transition: transform 525ms cubic-bezier(0.62, 0.1, 0, 1), opacity 408ms cubic-bezier(0.62, 0.1, 0, 1);
         pointer-events: none; }
       /* line 1063, sass/main.sass */
       .handle .handle-slider .handle-grip .icon.icon-play {
@@ -1234,10 +1136,8 @@ section {
       height: 2px;
       margin-left: -20px;
       opacity: 0;
-      -webkit-transition: width 248ms cubic-bezier(0.22, 0, 0, 0.84), margin-left 248ms cubic-bezier(0.22, 0, 0, 0.84), opacity 192ms ease-out;
-              transition: width 248ms cubic-bezier(0.22, 0, 0, 0.84), margin-left 248ms cubic-bezier(0.22, 0, 0, 0.84), opacity 192ms ease-out;
-      -webkit-transition-delay: 30ms;
-              transition-delay: 30ms; }
+      transition: width 248ms cubic-bezier(0.22, 0, 0, 0.84), margin-left 248ms cubic-bezier(0.22, 0, 0, 0.84), opacity 192ms ease-out;
+      transition-delay: 30ms; }
       /* line 1102, sass/main.sass */
       .handle .handle-slider .handle-edge .edge-top {
         top: -2px; }
@@ -1248,8 +1148,7 @@ section {
     .handle .handle-slider .handle-track {
       position: relative;
       height: 485px;
-      -webkit-mask: url(/img/icon-book_handle_mask.svg);
-              mask: url(/img/icon-book_handle_mask.svg); }
+      mask: url(/img/icon-book_handle_mask.svg); }
       /* line 1110, sass/main.sass */
       .handle .handle-slider .handle-track .handle-track-center {
         position: absolute;
@@ -1285,10 +1184,8 @@ section {
     left: 16px;
     bottom: -29px;
     opacity: 0.22;
-    -webkit-transition: -webkit-transform 628ms cubic-bezier(0.82, 0.12, 0, 0.77), opacity 497ms cubic-bezier(0.82, 0.12, 0, 0.77);
-            transition: transform 628ms cubic-bezier(0.82, 0.12, 0, 0.77), opacity 497ms cubic-bezier(0.82, 0.12, 0, 0.77);
-    -webkit-transition-delay: 284ms;
-            transition-delay: 284ms;
+    transition: transform 628ms cubic-bezier(0.82, 0.12, 0, 0.77), opacity 497ms cubic-bezier(0.82, 0.12, 0, 0.77);
+    transition-delay: 284ms;
     active-opacity: 0.6;
     hover-opacity: 0;
     hover-transform: scale(0, 0);
@@ -1308,11 +1205,8 @@ section {
     border: 2px solid #2db90c;
     border-radius: 25px;
     opacity: 0;
-    -webkit-transform: scale(1.12, 1.12);
-        -ms-transform: scale(1.12, 1.12);
-            transform: scale(1.12, 1.12);
-    -webkit-transition: opacity 412ms cubic-bezier(0.86, 0.04, 0.4, 0.62) 52ms, -webkit-transform 1452ms cubic-bezier(0.32, 0.05, 0.02, 0.93) 22ms;
-            transition: opacity 412ms cubic-bezier(0.86, 0.04, 0.4, 0.62) 52ms, transform 1452ms cubic-bezier(0.32, 0.05, 0.02, 0.93) 22ms;
+    transform: scale(1.12, 1.12);
+    transition: opacity 412ms cubic-bezier(0.86, 0.04, 0.4, 0.62) 52ms, transform 1452ms cubic-bezier(0.32, 0.05, 0.02, 0.93) 22ms;
     float: left;
     margin-right: 4px;
     overflow: hidden; }
@@ -1336,16 +1230,14 @@ section {
       text-align: right;
       padding-bottom: 8px;
       opacity: 0;
-      -webkit-transition: opacity 480ms cubic-bezier(0.65, 0.4, 0.42, 0.92);
-              transition: opacity 480ms cubic-bezier(0.65, 0.4, 0.42, 0.92); }
+      transition: opacity 480ms cubic-bezier(0.65, 0.4, 0.42, 0.92); }
     /* line 1188, sass/main.sass */
     .reader-info .info h2 {
       font-family: Roboto, sans-serif;
       font-weight: 500;
       font-size: 16px;
       opacity: 0;
-      -webkit-transition: opacity 698ms cubic-bezier(0.65, 0.4, 0.42, 0.92);
-              transition: opacity 698ms cubic-bezier(0.65, 0.4, 0.42, 0.92); }
+      transition: opacity 698ms cubic-bezier(0.65, 0.4, 0.42, 0.92); }
 
 /* line 1196, sass/main.sass */
 .reader-info.active .info h1,
@@ -1354,9 +1246,7 @@ section {
   margin-left: 0; }
 /* line 1200, sass/main.sass */
 .reader-info.active .info .image {
-  -webkit-transform: scale(1, 1);
-      -ms-transform: scale(1, 1);
-          transform: scale(1, 1);
+  transform: scale(1, 1);
   opacity: 1; }
 
 /* line 1205, sass/main.sass */
@@ -1369,30 +1259,21 @@ section {
 /* line 1213, sass/main.sass */
 .handle.scrub-bar.playing .handle-slider .handle-grip .icons {
   opacity: 0;
-  -webkit-transform: scale(1.42, 1.42);
-      -ms-transform: scale(1.42, 1.42);
-          transform: scale(1.42, 1.42);
-  -webkit-transition-delay: 220ms;
-          transition-delay: 220ms;
-  -webkit-transition-duration: 234ms;
-          transition-duration: 234ms; }
+  transform: scale(1.42, 1.42);
+  transition-delay: 220ms;
+  transition-duration: 234ms; }
 /* line 1218, sass/main.sass */
 .handle.scrub-bar.playing .handle-slider .handle-grip .playhead {
   opacity: 1;
-  -webkit-transform: scale(1, 1);
-      -ms-transform: scale(1, 1);
-          transform: scale(1, 1);
-  -webkit-transition-delay: 348ms;
-          transition-delay: 348ms; }
+  transform: scale(1, 1);
+  transition-delay: 348ms; }
 
 /* line 1223, sass/main.sass */
 .center {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%); }
 
 /* line 1228, sass/main.sass */
 .uppercase {
@@ -1410,10 +1291,7 @@ section {
   .book-footer .btn-footer-chapter {
     height: 2.6875em;
     cursor: pointer;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none; }
+    user-select: none; }
     /* line 1242, sass/main.sass */
     .book-footer .btn-footer-chapter .arrow-up {
       position: relative;
@@ -1506,10 +1384,7 @@ section {
 
 /* line 1320, sass/main.sass */
 .audio-controls-panel {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none; }
+  user-select: none; }
   /* line 1322, sass/main.sass */
   .audio-controls-panel .audio-controls-slider-mask {
     height: 2.6875em;
@@ -1519,9 +1394,7 @@ section {
     overflow: hidden; }
   /* line 1328, sass/main.sass */
   .audio-controls-panel .audio-controls-inner {
-    -webkit-transform: translateX("100%");
-        -ms-transform: translateX("100%");
-            transform: translateX("100%");
+    transform: translateX("100%");
     border-left: solid 1px #303030;
     height: 100%; }
   /* line 1332, sass/main.sass */
@@ -1569,32 +1442,23 @@ section {
     background: #474546; }
   /* line 1369, sass/main.sass */
   .audio-controls-panel .audio-scrubber {
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    user-select: none;
     position: relative;
     top: 0.5625em;
     width: 0.8125em;
     height: 0.8125em;
-    -webkit-transform: translate3d(32.928px, 0px, 0px);
-            transform: translate3d(32.928px, 0px, 0px);
-    -ms-touch-action: none;
-        touch-action: none;
+    transform: translate3d(32.928px, 0px, 0px);
+    touch-action: none;
     z-index: 1003; }
   /* line 1378, sass/main.sass */
   .audio-controls-panel .audio-scrubber-inner {
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    user-select: none;
     width: 1.625em;
     height: 1.625em;
     border-radius: 50%;
     background: #000;
     border: 4px solid #fff;
-    -webkit-transition: background 300ms ease-out;
-            transition: background 300ms ease-out; }
+    transition: background 300ms ease-out; }
   /* line 1386, sass/main.sass */
   .audio-controls-panel .btn-audio-control-volume {
     height: 2.6875em;
@@ -1614,30 +1478,6 @@ section {
 /* line 1400, sass/main.sass */
 .video-block {
   text-align: center; }
-
-@-webkit-keyframes slidy {
-  0% {
-    left: 0%; }
-  15% {
-    left: 0%; }
-  19% {
-    left: -99.6%; }
-  34% {
-    left: -99.6%; }
-  38% {
-    left: -199.2%; }
-  53% {
-    left: -199.2%; }
-  57% {
-    left: -298.8%; }
-  72% {
-    left: -298.8%; }
-  76% {
-    left: -398.4%; }
-  91% {
-    left: -398.4%; }
-  100% {
-    left: -498%; } }
 
 @keyframes slidy {
   0% {
@@ -1679,8 +1519,7 @@ figure.slider {
   position: relative;
   width: 597.6%;
   font-size: 0;
-  -webkit-animation: 30s slidy infinite;
-          animation: 30s slidy infinite; }
+  animation: 30s slidy infinite; }
 
 /* line 1445, sass/main.sass */
 figure.slider figure {
